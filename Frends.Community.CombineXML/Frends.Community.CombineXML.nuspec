@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata>
+    <id>Frends.Community.CombineXML</id>
+    <version>1.0.0</version>
+    <title>Frends Community Combine XML task</title>
+    <authors>HiQ Finland</authors>
+    <owners />
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Frends Community Combine XML task</description>
+    <summary/>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System" />
+      <frameworkAssembly assemblyName="System.Data" />
+      <frameworkAssembly assemblyName="System.Xml" />
+    </frameworkAssemblies>
+  </metadata>
+  <files>
+    <file src="bin\release\Frends.Community.CombineXML.dll" target="lib\net451\Frends.Community.CombineXML.dll" />
+    <file src="bin\release\Frends.Community.CombineXML.xml" target="lib\net451\Frends.Community.CombineXML.xml" />
+    <file src="FrendsTaskMetadata.json" target="FrendsTaskMetadata.json" />
+  </files>
+</package>
