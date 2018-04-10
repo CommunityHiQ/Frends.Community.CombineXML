@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Xml;
 
@@ -15,7 +16,7 @@ namespace Frends.Community.CombineXML
         /// </summary>
         /// <param name="input">Xml strings or xml documents that will be merged</param>
         /// <returns>Xml string of combined xml</returns>
-        public static async Task<string> CombineXML(Input input)
+        public static async Task<string> CombineXML(Input input, CancellationToken cancellationToken)
         {
             var inputXmls = input.InputXmls;
 
@@ -36,6 +37,7 @@ namespace Frends.Community.CombineXML
 
                     foreach (var xml in inputXmls)
                     {
+                        cancellationToken.ThrowIfCancellationRequested();
                         xw.WriteStartElement(xml.ChildElementName);
 
                         var xmlDoc = new XmlDocument();
@@ -56,8 +58,10 @@ namespace Frends.Community.CombineXML
                             }
                             await xw.WriteNodeAsync(xr, false).ConfigureAwait(false);
                         }
+                        cancellationToken.ThrowIfCancellationRequested();
                         xw.WriteEndElement();
                     }
+                    cancellationToken.ThrowIfCancellationRequested();
                     xw.WriteEndElement();
                     xw.WriteEndDocument();
                 }
