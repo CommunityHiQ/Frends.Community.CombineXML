@@ -31,13 +31,15 @@ Combines two or more xml strings or xml documents to one xml string
 
 | Property | Type | Description | Example |
 | -------- | -------- | -------- | -------- |
-| Xml| object | Xml input as string or xml document | '\<note>\<body>Hello\</body\</note>' |
+| Xml| object | Xml input as string or xml document | `<note><body>Hello!</body></note> `|
 | ChildElementName| string | Child element name where the xml document will be written in| 'ChildElement1' |
 
 
 ### Returns
 
-Xml string of combined xml
+| Property | Type | Description | Example |
+| -------- | -------- | -------- | -------- |
+| Xml| string| Combined xml as string | ``<root><child1><note1><body1>Hello!</body1></note1></child1><child2><note2<body2>Hello2!</body2></note2></child2></root>``
 
 
 # Building
@@ -76,4 +78,3 @@ NOTE: Be sure to merge the latest from "upstream" before making a pull request!
 | Version | Changes |
 | ----- | ----- |
 | 1.0.0 | First version. 
-

@@ -1,5 +1,7 @@
 ﻿using System;
+using System.IO;
 using System.Linq;
+using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Xml;
@@ -7,15 +9,15 @@ using System.Xml;
 namespace Frends.Community.CombineXML
 {
     /// <summary>
-    /// Combines two or more xml strings or xml documents to one xml string
+    /// Combines 2 or more xml strings or documents to 1 xml string
     /// </summary>
     public class CombineXMLTask
     {
         /// <summary>
-        /// Combines two or more xml strings or xml documents to one xml string
+        /// Combines 2 or more xml strings or documents to 1 xml string
         /// </summary>
         /// <param name="input">Xml strings or xml documents that will be merged</param>
-        /// <returns>Xml string of combined xml</returns>
+        /// <returns>Combined xml as string</returns>
         public static async Task<string> CombineXML(Input input, CancellationToken cancellationToken)
         {
             var inputXmls = input.InputXmls;
@@ -28,9 +30,9 @@ namespace Frends.Community.CombineXML
             }
 
             // Combine
-            using (var sw = new UTF8StringWriter())
+            using (var sw = new StringWriter())
             {
-                using (var xw = XmlWriter.Create(sw, new XmlWriterSettings { Async = true }))
+                using (var xw = XmlWriter.Create(sw, new XmlWriterSettings {Async = true, OmitXmlDeclaration = true}))
                 {
                     xw.WriteStartDocument();
                     xw.WriteStartElement(input.XmlRootElementName);

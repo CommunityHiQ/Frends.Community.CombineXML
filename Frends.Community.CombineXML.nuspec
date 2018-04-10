@@ -16,8 +16,8 @@
     </frameworkAssemblies>
   </metadata>
   <files>
-    <file src="bin\release\Frends.Community.CombineXML.dll" target="lib\net451\Frends.Community.CombineXML.dll" />
-    <file src="bin\release\Frends.Community.CombineXML.xml" target="lib\net451\Frends.Community.CombineXML.xml" />
-    <file src="FrendsTaskMetadata.json" target="FrendsTaskMetadata.json" />
+    <file src="Frends.Community.CombineXML\bin\release\Frends.Community.CombineXML.dll" target="lib\net451\Frends.Community.CombineXML.dll" />
+    <file src="Frends.Community.CombineXML\bin\release\Frends.Community.CombineXML.xml" target="lib\net451\Frends.Community.CombineXML.xml" />
+    <file src="Frends.Community.CombineXML\FrendsTaskMetadata.json" target="FrendsTaskMetadata.json" />
   </files>
 </package>

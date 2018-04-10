@@ -45,10 +45,8 @@
     <Compile Include="CombineXMLTask.cs" />
     <Compile Include="Definitions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UTF8StringWriter.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Frends.Community.CombineXML.nuspec" />
     <None Include="FrendsTaskMetadata.json" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

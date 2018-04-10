@@ -3,13 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Frends.Community.CombineXML", "Frends.Community.CombineXML.csproj", "{44ED5D93-3F2E-45B6-9452-DC84A6E0A94A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Frends.Community.CombineXML", "Frends.Community.CombineXML\Frends.Community.CombineXML.csproj", "{44ED5D93-3F2E-45B6-9452-DC84A6E0A94A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Frends.Community.CombineXML.Tests", "..\Frends.Community.CombineXML.Tests\Frends.Community.CombineXML.Tests.csproj", "{212BBF80-F45B-4A5C-87E4-39415C999633}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Frends.Community.CombineXML.Tests", "Frends.Community.CombineXML.Tests\Frends.Community.CombineXML.Tests.csproj", "{212BBF80-F45B-4A5C-87E4-39415C999633}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C8B71C52-5D0A-498C-81F3-68182303B825}"
 	ProjectSection(SolutionItems) = preProject
-		..\README.md = ..\README.md
+		Frends.Community.CombineXML.nuspec = Frends.Community.CombineXML.nuspec
+		README.md = README.md
 	EndProjectSection
 EndProject
 Global
