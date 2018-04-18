@@ -17,7 +17,7 @@ namespace Frends.Community.CombineXML
         /// Combines 2 or more xml strings or documents to 1 xml string
         /// </summary>
         /// <param name="input">Xml strings or xml documents that will be merged</param>
-        /// <returns>Combined xml as string</returns>
+        /// <returns>string</returns>
         public static async Task<string> CombineXML(Input input, CancellationToken cancellationToken)
         {
             var inputXmls = input.InputXmls;
