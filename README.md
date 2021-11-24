@@ -1,3 +1,5 @@
+This repository is archived and the the tasks have been moved to https://github.com/CommunityHiQ/Frends.Community.Xml
+
 # Frends.Community.CombineXML
 FRENDS task for combining 2 or more XMLs to 1
 
